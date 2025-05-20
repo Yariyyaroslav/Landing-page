@@ -90,6 +90,9 @@ h6 {
     font-size: inherit;
     font-weight: inherit;
 }
+body{
+    min-width: 390px;
+}
 
 header {
     background: url('../src/bg.jpg');
@@ -242,6 +245,7 @@ h2>span {
 }
 
 .block {
+    min-width: 200px;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -401,7 +405,7 @@ section>h1::after {
 .slave {
 
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 3px;
     display: flex;
     flex-direction: column;
 }
@@ -466,8 +470,8 @@ section>h1::after {
 
 .slave>img {
     z-index: 1;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
     width: 100%;
 }
 
@@ -502,7 +506,7 @@ section>h1::after {
     background-image: url('../src/blog-bg.jpg');
     background-size: cover;
     overflow: hidden;
-    border-image: fill 0 linear-gradient(rgba(21, 29, 51, 0.552), rgba(21, 29, 51, 0.552));
+    border-image: fill 0 linear-gradient(rgba(21, 29, 51, 0.752), rgba(21, 29, 51, 0.752));
 }
 
 .third>h1 {
@@ -524,10 +528,9 @@ section>h1::after {
 .blogElm {
     display: flex;
     flex-direction: row;
-    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.75);
     filter: grayscale(1);
+    border-radius: 3px;
 }
 
 .blogElm:hover {
@@ -582,8 +585,6 @@ section>h1::after {
 
 
 iframe {
-    border-radius: 30px;
-    box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.75);
     width: 75%;
 
 }
@@ -700,6 +701,26 @@ footer {
     nav {
         padding: 0 40px;
     }
+    .text h1 {
+        font-size: 40px;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    .apps>h2 {
+        padding: 0.7em;
+    }
+    .block {
+        min-width: 150px;
+    }
+    .wrap{
+        padding: 25px 40px;
+    }
+    section{
+        padding: 20px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -725,8 +746,8 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
-    .wrap {
-        padding: 30px 50px;
+    .textarea>h2{
+        font-size: 18px;
     }
 
     .text::before {
